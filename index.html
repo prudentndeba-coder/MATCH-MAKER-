@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Match Maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="hero" id="hero">
+    <div class="user" id="userPic"></div>
+    <div class="jesus" role="img" aria-label="Painted portrait"></div>
+    <label class="slot"><span id="slotText"></span><input id="photo2" type="file" accept="image/*" aria-label="Upload your photo"></label>
+    <div class="t"><h1>Match Maker</h1><p class="sub">Enter two names to see how well they match.</p></div>
+  </div>
+  <section id="start">
+    <p>Start by adding your photo. It appears behind the portrait and stays on your device.</p>
+    <label class="pick">Choose your photo<input id="photo" type="file" accept="image/*"></label>
+    <p id="pickErr" role="alert"></p>
+    <button id="skip" type="button" class="ghost">Skip for now</button>
+  </section>
+  <section id="game" hidden>
+  <label for="a">First name</label>
+  <input id="a" type="text" autocomplete="off" maxlength="30">
+  <label for="b">Second name</label>
+  <input id="b" type="text" autocomplete="off" maxlength="30">
+  <button id="go" type="button">Check the match</button>
+  <p id="error" role="alert"></p>
+  <div id="result" aria-live="polite"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
